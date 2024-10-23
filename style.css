@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(225deg, #070761 0%, #04033c 50%, #020025 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 25px;
+    align-items: start;
+}
+
+h1 {
+    width: 100%;
+    font-size: 2.7rem;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.container {
+    height: 65%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.box {
+    height: 32%;
+    width: 26%;
+    font-size: 4.7rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px #fff;
+    cursor: pointer;
+}
+
+.options {
+    height: 50%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.display {
+    height: auto;
+    width: 85%;
+    font-size: 2.3rem;
+    text-align: center;
+}
+.hide {
+    display: none;
+}
+
+.list {
+    height: 10%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+.list p {
+    font-size: 1.6rem;
+}
+
+.controls {
+    height: 15%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 70px;
+}
+.controls button {
+    padding: 15px 30px;
+    font-size: 1.15rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.controls button:hover {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0px;
+}
+
+
+@media screen and (max-width: 775.9px) {
+    body {
+        justify-content: space-between;
+        padding: 0px 25px;
+    }
+    .container {
+        height: 70%;
+        width: 56%;
+    }
+    .game-board {
+        width: 100%;
+    }
+    .box {
+        height: 28%;
+        width: 31%;
+        font-size: 4.5rem;
+    }
+    .options {
+        height: auto;
+        width: 40%;
+    }
+    .display {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    .list {
+        width: 70%;
+        flex-wrap: wrap;
+        row-gap: 25px;
+    }
+    .controls {
+        width: 100%;
+    }
+    .controls button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 433.9px) {
+    body {
+        justify-content: space-between;
+        padding: 0px 25px;
+    }
+    h1 {
+        font-size: 2.25rem;
+        margin-top: 15px;
+    }
+    .container {
+        height: 50%;
+        width: 100%;
+        margin-top: -70px;
+    }
+    .box {
+        height: 26%;
+        width: 30%;
+        font-size: 4.25rem;
+    }
+    .options {
+        height: auto;
+        width: 100%;
+        margin-top: -50px;
+    }
+    .display {
+        width: 75%;
+        line-height: 35px;
+        font-size: 1.75rem;
+    }
+    .list {
+        width: 90%;
+        flex-wrap: nowrap;
+        row-gap: 25px;
+    }
+    .controls {
+        width: 85%;
+        margin-top: 50px;
+    }
+    .controls button {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+}
